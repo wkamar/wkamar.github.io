@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light;
+  --paper: oklch(98% 0.009 90);
+  --ink: oklch(28% 0.045 241);
+  --muted: oklch(47% 0.032 241);
+  --accent: oklch(39% 0.082 231);
+  --line: oklch(84% 0.02 225);
+  --tint: oklch(94% 0.022 219);
+  font-family: "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--paper);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: var(--accent); text-underline-offset: .22em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 2px; }
+.wrap { max-width: 1120px; margin-inline: auto; padding-inline: clamp(22px, 5vw, 64px); }
+.skip-link { position: absolute; left: 20px; top: -100px; background: var(--paper); padding: 10px 16px; z-index: 2; }
+.skip-link:focus { top: 8px; }
+.site-header { min-height: 108px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 1.08rem; font-weight: 650; text-decoration: none; }
+.brand-mark { color: var(--accent); font-size: 2rem; line-height: 1; }
+nav a { padding-block: 10px; }
+h1, h2 { line-height: 1.12; letter-spacing: -.035em; }
+h1 { font-size: clamp(2.6rem, 6.5vw, 4.5rem); font-weight: 650; margin: 16px 0 24px; }
+h2 { font-size: 1.55rem; font-weight: 650; margin-block: 40px 16px; }
+p { margin-block: 0 18px; }
+.eyebrow { color: var(--muted); font-size: .9rem; margin: 0; }
+.home { padding-block: clamp(40px, 7vw, 90px) 32px; display: grid; grid-template-columns: 1.45fr 1fr; gap: 48px; align-items: center; }
+.intro { max-width: 59ch; }
+.lead { font-size: 1.3rem; line-height: 1.45; margin-bottom: 24px; }
+.text-link { display: inline-block; margin-top: 12px; }
+.puzzle-art { width: 100%; max-width: 350px; justify-self: end; color: var(--accent); }
+.support { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 2fr; column-gap: 36px; padding-top: 38px; margin-top: 30px; border-top: 1px solid var(--line); }
+.support h2 { margin-top: 0; }
+.support p { margin-bottom: 10px; }
+.muted, .updated { color: var(--muted); font-size: .9rem; }
+.document { max-width: 900px; padding-block: 40px 64px; }
+.document h1 { font-size: clamp(2.6rem, 6vw, 3.6rem); margin-bottom: 18px; }
+.document p { max-width: 73ch; }
+.document h2 { scroll-margin-top: 20px; }
+.notice { background: var(--tint); padding: 24px 28px; margin-block: 30px 38px; border-radius: 8px; }
+.notice p { margin: 0; }
+.site-footer { padding-block: 28px 36px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color: var(--muted); font-size: .85rem; }
+.site-footer::before { content: ""; width: 100%; border-top: 1px solid var(--line); margin-bottom: 8px; }
+@media (max-width: 680px) {
+  .site-header { min-height: 88px; gap: 16px; font-size: .9rem; }
+  .brand { font-size: .95rem; gap: 7px; }
+  .home { grid-template-columns: 1fr; gap: 28px; padding-top: 32px; }
+  .puzzle-art { max-width: 230px; justify-self: center; }
+  .support { grid-template-columns: 1fr; gap: 8px; margin-top: 8px; }
+  .support h2 { margin-bottom: 12px; }
+  .document { padding-top: 24px; }
+  .notice { padding: 20px; }
+  h2 { font-size: 1.4rem; }
+  a { overflow-wrap: anywhere; }
+}
+@media print {
+  :root { font-size: 11pt; }
+  .site-header, .site-footer, .skip-link { display: none; }
+  .document { max-width: none; padding: 0; }
+  .notice { padding: 12px; border: 1px solid var(--line); }
+  h2 { break-after: avoid; }
+}
