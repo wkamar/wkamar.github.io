@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pre-release privacy notice for Ocean Code Sudoku and the Ocean Code Studio website. Contact, planned services, local data, purchases, and privacy choices.">
+  <meta name="description" content="Privacy notice for Ocean Code Sudoku and the Ocean Code Studio website: local game data, Google Play purchases, advertising in the free version, privacy choices, and contact.">
   <meta name="color-scheme" content="light">
   <title>Privacy notice · Ocean Code Sudoku</title>
   <link rel="stylesheet" href="style.css">
@@ -17,49 +17,49 @@
   <main id="main" class="wrap document">
     <p class="eyebrow">Ocean Code Sudoku</p>
     <h1>Privacy notice</h1>
-    <p class="updated">Last updated: <time datetime="2026-10-01">1 October 2026</time></p>
+    <p class="updated">Last updated: <time datetime="2026-10-02">2 October 2026</time></p>
     <div class="notice">
-      <p><strong>Pre-release notice.</strong> Ocean Code Sudoku is in development and is not publicly released. This notice covers this website and describes the intended Android release. Planned integrations and privacy controls are not a statement that those services are already operating. We will verify the release build and update this notice before launch.</p>
+      <p><strong>Pre-release notice.</strong> Ocean Code Sudoku (Android, package <code>com.oceancodestudio.sudoku</code>) is in testing and not yet publicly released. This notice describes the build being tested. We will review it again against the released version.</p>
     </div>
     <section aria-labelledby="who">
       <h2 id="who">Who we are</h2>
-      <p>Ocean Code Studio (“we”) develops Ocean Code Sudoku. For support or privacy requests, contact <a href="mailto:kamarwessam@gmail.com">kamarwessam@gmail.com</a>. This notice applies to the game and this developer website.</p>
+      <p>Ocean Code Studio (“we”) develops Ocean Code Sudoku. For support or privacy requests, contact <a href="mailto:kamarwessam@gmail.com">kamarwessam@gmail.com</a>. This notice applies to the game and this website.</p>
     </section>
     <section aria-labelledby="local">
       <h2 id="local">Game data on your device</h2>
-      <p>The intended game stores saved puzzles, progress, settings, statistics, hint balances, privacy choices, and a record of Pro entitlement locally. These records support gameplay, remember your choices, and keep an already verified Pro upgrade available offline. We do not plan an app login or our own cloud-save service.</p>
-      <p>Downloaded puzzle packs are game content. Android or your device manufacturer may back up or transfer app data, depending on your device settings and the final build configuration. Local storage does not mean data can never leave your device through those system services.</p>
+      <p>The game saves your puzzle, settings, statistics, recently played puzzle numbers, hint balance, ad-frequency counters and a record that Pro was verified in app-specific storage. The Pro record includes a one-way hash of the Google Play purchase token; the game does not write the original token to its save files. We have no app account system, cloud-save service or developer-operated game server, and we do not receive these save files.</p>
+      <p>The app opts out of Android cloud backup. Some device manufacturers may still transfer app data when you move to a new phone. Clearing the app’s storage or uninstalling it removes the local saves on that device; copies made by device-transfer tools may need separate removal. An eligible Pro purchase can be restored through the Google Play account that bought it, which requires connecting to Google Play.</p>
+      <p>Unity Analytics and Unity Crash Reporting are disabled, and we do not run a separate gameplay analytics service. Advertising services in the free version still process measurement and diagnostic information as described below.</p>
     </section>
     <section aria-labelledby="purchases">
-      <h2 id="purchases">Google Play purchases and downloads</h2>
-      <p>We plan a one-time Pro purchase through Google Play. Google processes the payment; the game uses purchase identifiers, purchase state, and verification information to unlock or restore Pro. We do not receive your full payment card details. Buying or restoring may require an internet connection and your Google Play account.</p>
-      <p>Optional additional puzzle packs may use Google Play Asset Delivery. Google can process download and device information when providing these services. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
+      <h2 id="purchases">Google Play: Pro purchase and optional puzzle downloads</h2>
+      <p>The planned Pro upgrade is a one-time purchase through Google Play Billing. Purchasing is not yet publicly available during this testing period. Google processes payments; the game does not receive your full card or bank details. The app checks ownership with Google Play to unlock and restore Pro, and remembers a verified purchase so Pro also works offline. Google Play Billing may send its own diagnostic information to Google.</p>
+      <p>Additional puzzle packs are optional downloads delivered by Google Play (Play Asset Delivery). See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
     </section>
     <section aria-labelledby="ads">
-      <h2 id="ads">Advertising in the free version</h2>
-      <p>We plan to use Unity LevelPlay with Unity Ads and Google AdMob for optional rewarded ads and occasional ads between games. The final participating networks will be confirmed before release.</p>
-      <p>When used, these services may process advertising or other device identifiers, IP address and approximate location derived from it, device and app information, ad views and interactions, and diagnostic information. Their purposes include serving and measuring ads, limiting repeated ads, and preventing fraud. Data handled depends on the installed SDKs, available permissions, your region, and privacy choices.</p>
-      <p>Pro is intended to remove all ads, including rewarded ads, with an ad-free way to obtain hints. Pro does not remove processing required for Google Play purchases, restoration, or downloads. See <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity’s Game Player and App User Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner apps</a>.</p>
+      <h2 id="ads">Advertising in the free version only</h2>
+      <p>The free version can show optional rewarded ads (you choose to watch one for an extra hint) and occasional full-screen ads between finished puzzles — never during a puzzle. There are no banner ads. Ads are delivered through Unity LevelPlay (ironSource Mobile) mediation, with Unity Ads and Google AdMob as ad sources.</p>
+      <p>When advertising services are used, these providers may process advertising and other device identifiers, IP address (and approximate location derived from it), device and app information, ad views and interactions, and diagnostic data. They use this information to deliver and measure ads, assess ad quality, limit repetition and prevent fraud. LevelPlay includes its Ad Quality service. What providers process depends on your region, privacy choices and the service configuration. See <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity’s Game Player and App User Privacy Policy</a> (Unity Ads and LevelPlay/ironSource) and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner apps</a>.</p>
+      <p><strong>Pro is completely ad-free.</strong> When Pro is known on your device, the game does not start any advertising or ad-consent service at all, and Pro hints never require watching an ad.</p>
     </section>
     <section aria-labelledby="choices">
-      <h2 id="choices">Privacy choices and diagnostics</h2>
-      <p>We plan an in-app privacy control to present required choices and let you revisit them. Choosing non-personalized ads does not necessarily stop all technical data processing. Android also provides advertising identifier controls. Available options depend on your device and region.</p>
-      <p>Development builds may contain legacy Unity Analytics and crash-reporting components. We plan to disable these before release unless a revised notice explains their use. Their removal and the behavior of advertising SDKs still require release-build verification. This notice does not claim that development builds collect no analytics or diagnostics.</p>
+      <h2 id="choices">Your privacy choices</h2>
+      <p>In the free version, the game uses Google’s consent tool (User Messaging Platform) before requesting ads. In the European Economic Area, the United Kingdom and Switzerland, the tool presents the applicable choices before allowing ad requests. In supported US states, you can opt out of the sale or sharing of personal information and of targeted advertising; the game passes that choice to its advertising services. Choosing not to consent does not prevent you from playing Sudoku.</p>
+      <p>You can review or change your choices at any time in <em>Settings › Privacy › Privacy choices</em> (shown where these rules apply). Android also lets you reset or delete your advertising ID in the system settings. Refusing personalised ads does not remove all technical processing needed to deliver an ad.</p>
     </section>
     <section aria-labelledby="age">
       <h2 id="age">Intended audience</h2>
-      <p>The game is intended for teenagers and adults aged 13 and over, not directed at children under 13. Regional rules can require additional protections for younger users. Contact us if you believe a child has provided personal information to us.</p>
+      <p>The intended audience is people aged 13 and over; the game is not directed at children under 13. Additional regional protections can apply to teenagers. Age-related advertising protections are still being reviewed before public release. Contact us if you believe a child has provided personal information through the game.</p>
     </section>
     <section aria-labelledby="requests">
-      <h2 id="requests">Support, retention, and deletion</h2>
-      <p>If you email us, we receive your address and anything you include. We use this to respond and handle your request. Avoid sending sensitive information. Support correspondence is kept as needed to handle the conversation and relevant obligations; provider records follow the providers’ own policies.</p>
-      <p>You can remove local game records by clearing the app’s storage or uninstalling it. Device backups may need separate deletion and may restore data later. Removing the app does not delete Google Play purchase history or data held by advertising providers.</p>
-      <p>Depending on applicable law, you may have rights to access, correct, delete, or restrict use of personal information. Email us for requests about information we hold. For provider-held information, use the controls and contacts in their policies. We may need information to verify a request; do not send identity documents unless specifically necessary.</p>
+      <h2 id="requests">Support, retention and your rights</h2>
+      <p>If you email us, we receive your address and anything you include, and use it only to answer you. We keep correspondence only as long as needed to handle your request. Please do not send sensitive information.</p>
+      <p>We do not hold your game saves, so we cannot see, export or delete them for you; you control local saves through the app’s storage settings. Uninstalling the game does not delete Google Play purchase history or records held by advertising providers. Google, Unity and ironSource have their own retention rules and privacy controls, linked above. Depending on where you live, you may have rights to access, correct or delete personal information; email us about anything we hold or for help directing a request.</p>
     </section>
     <section aria-labelledby="website">
-      <h2 id="website">This website and future changes</h2>
-      <p>These pages add no analytics scripts, advertising trackers, external fonts, or cookies. The hosting provider may process standard request information, including IP addresses and browser details, to serve and protect the site. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
-      <p>We will update this page when the app’s services or practices change and revise the date above. The release notice and Google Play Data safety information must reflect the verified app.</p>
+      <h2 id="website">This website and changes</h2>
+      <p>These pages use no analytics, trackers, external fonts or cookies. The host (GitHub Pages) may process standard request information such as IP addresses; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+      <p>We will update this page, and its date, when the app’s services or practices change.</p>
     </section>
   </main>
   <footer class="site-footer wrap"><a href="index.html">Ocean Code Studio</a><a href="mailto:kamarwessam@gmail.com">Contact</a></footer>
